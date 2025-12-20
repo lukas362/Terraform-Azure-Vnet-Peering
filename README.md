@@ -4,7 +4,7 @@ Infrastructure as Code (IaC) for deploying and managing Azure resources using Te
 
 
 
-##Useful Commands 
+## Useful Commands 
 terraform apply to create the resource on Azure (thing I wanna create) 
 
 terraform destroy will destroy the resources on Azure 
