@@ -114,7 +114,7 @@ resource "azurerm_network_security_group" "vnet_b_nsg" {
         protocol                   = "*"
         source_port_range          = "*"
         destination_port_range     = "*"
-        source_address_prefix      = "10.1.0.0/16"  # VNet A address space
+        source_address_prefix      = "10.1.0.0/16"  
         destination_address_prefix = "*"
     }
 
