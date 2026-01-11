@@ -20,7 +20,7 @@ resource "azurerm_resource_group" "jensen" {
 
     tags = {
         environment = "development"
-        owner       = "jensen"
+        owner       = "Owner_Name"    # Owner name here 
     }
 }
 
@@ -109,7 +109,7 @@ resource "azurerm_network_security_group" "vnet_a_nsg" {
         protocol                   = "Tcp"
         source_port_range          = "*"
         destination_port_range     = "22"
-        source_address_prefix      = "*"
+        source_address_prefix      = "IP here" # Specific IP address 
         destination_address_prefix = "*"
     }
 }
@@ -141,7 +141,7 @@ resource "azurerm_network_security_group" "vnet_b_nsg" {
         protocol                   = "Tcp"
         source_port_range          = "*"
         destination_port_range     = "22"
-        source_address_prefix      = "*"
+        source_address_prefix      = "10.1.0.0/16"
         destination_address_prefix = "*"
     }
 
