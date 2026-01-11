@@ -11,7 +11,7 @@ This template creates two peered Virtual Networks with different functions:
 - **VNet B (10.2.0.0/16)**: Private network (Backend)
   - Only accessible from VNet A (10.1.0.0/16) and other trafic is denied by NSG 
   - Adds an extra layer of defence incase VNet A would be attacked or exposed
-  - Useful for databases or storing sesitive information 
+  - Useful for databases or storing sensitive information 
 
 ## What Gets Created
 
