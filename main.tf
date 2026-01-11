@@ -176,7 +176,7 @@ resource "azurerm_subnet" "vnet_b_subnet" {
     address_prefixes     = ["10.2.1.0/24"]
 }
 
-# NSG associations (Applies the security rules stated before onto the VNets) 
+# NSG associations (Attaches/applies the NSG rules from before onto the subnets. In other words it makes sure that they are active and used in the right subnet) 
 # Apply NSG to VNet A subnet 
 resource "azurerm_subnet_network_security_group_association" "vnet_a_nsg_assoc" {
     subnet_id                 = azurerm_subnet.vnet_a_subnet.id
@@ -189,4 +189,5 @@ resource "azurerm_subnet_network_security_group_association" "vnet_b_nsg_assoc" 
     network_security_group_id = azurerm_network_security_group.vnet_b_nsg.id
 
 }
+
 
