@@ -1,5 +1,5 @@
 # Azure VNet Peering with Terraform
-Infrastructure as Code (IaC) for deploying a secure, multi-tier Azure network architecture using Terraform. This configuration demonstrates VNet peering and network segmentation with Network Security Groups (NSG).
+I made a deployable Azure network architecture using Terraform. It features VNet peering betweend two VNets and NSG rules. 
 
 ## Architecture
 This template creates two peered Virtual Networks with different functions:
