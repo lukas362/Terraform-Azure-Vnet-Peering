@@ -13,7 +13,7 @@ This template creates two peered Virtual Networks with different functions:
   - Adds an extra layer of defence incase VNet A would be attacked or exposed
   - Useful for databases or storing sensitive information 
 
-## What Gets Created
+## What gets created
 
 - Two Virtual Networks with peering with eachother 
 - Network Security Group rules 
@@ -23,7 +23,7 @@ This template creates two peered Virtual Networks with different functions:
 - DMZ-style network segmentation (by only allowing VNet A to communicate to the internet and restricting VNet B to only communicate with VNet A) 
 
 ## Commands 
-- terraform apply - to create the resource on Azure (thing I wanna create) 
+- terraform apply - to create the resource on Azure 
 
 - terraform destroy - will destroy the resources on Azure 
 
