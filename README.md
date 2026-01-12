@@ -1,5 +1,5 @@
 # Azure VNet Peering with Terraform
-I made a deployable Azure network architecture using Terraform. It features VNet peering betweend two VNets and NSG rules. 
+I made a deployable Azure network architecture using Terraform. It features VNet peering between two VNets (Frontend and Backend) and NSG rules. 
 
 ## Architecture
 This template creates two peered Virtual Networks with different functions:
