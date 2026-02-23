@@ -1,7 +1,7 @@
 # Azure VNet Peering with Terraform
 I made a deployable Azure network architecture using Terraform. It features VNet peering between two VNets (Frontend and Backend) and NSG rules. 
 
-## Architecture
+## 🏛️ Architecture
 This template creates two peered Virtual Networks with different functions:
 
 - **VNet A (10.1.0.0/16)**: Facing towards the internet (Frontend)
@@ -13,7 +13,7 @@ This template creates two peered Virtual Networks with different functions:
   - Adds an extra layer of defence incase VNet A would be attacked or exposed
   - Useful for databases or storing sensitive information 
 
-## What gets created
+## 🔨 What gets created
 
 - Two Virtual Networks with peering with eachother 
 - Network Security Group rules 
@@ -22,7 +22,7 @@ This template creates two peered Virtual Networks with different functions:
 - Resource group in Sweden Central region
 - DMZ-style network segmentation (by only allowing VNet A to communicate to the internet and restricting VNet B to only communicate with VNet A) 
 
-## Commands 
+## 💻 Commands 
 - terraform apply - to create the resource on Azure 
 
 - terraform destroy - will destroy the resources on Azure 
